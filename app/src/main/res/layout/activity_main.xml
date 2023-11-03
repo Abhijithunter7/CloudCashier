@@ -109,7 +109,8 @@
             android:textColorHint="#96ffffff"
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginemail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawablePadding="16dp"
@@ -128,7 +129,8 @@
             android:textColorHint="#96ffffff"
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginpass"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawablePadding="16dp"
@@ -148,6 +150,12 @@
             android:layout_marginBottom="8dp"
             android:gravity="center"
             android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/regspro"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <Button
                 android:id="@+id/sign_up_button"

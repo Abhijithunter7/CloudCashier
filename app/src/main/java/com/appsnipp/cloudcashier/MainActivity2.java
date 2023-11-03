@@ -11,6 +11,9 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 import androidx.appcompat.app.AppCompatDelegate;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -20,11 +23,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    FirebaseAuth auth;
+    FirebaseUser user;
+    Button button;
 
     private BottomNavigationView bottomNavigationView;
 
@@ -50,6 +57,22 @@ public class MainActivity2 extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2); // Set the content view first
+
+        auth = FirebaseAuth.getInstance();
+        button = findViewById(R.id.logoutButton);
+        user = auth.getCurrentUser();
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
 
         // Initialize TextViews and CardViews
         textViewSub1Title = (TextView) findViewById(R.id.textViewSub1Title);

@@ -95,7 +95,7 @@
             android:textColorHint="#96ffffff"
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/reguser"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -115,7 +115,7 @@
             android:textColorHint="#96ffffff"
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/regemail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -135,7 +135,7 @@
             android:textColorHint="#96ffffff"
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/regpass"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -157,7 +157,7 @@
             android:textColorHint="#96ffffff"
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/regconf_pass"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -180,6 +180,12 @@
             android:layout_marginBottom="8dp"
             android:gravity="center"
             android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/regspro1"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <Button
                 android:id="@+id/regsign_up_button"
