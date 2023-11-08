@@ -1,63 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/utilities"
+    android:background="@drawable/food1"
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/utitext1"
+        android:id="@+id/foodtitleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:text="Title"
         android:textColor="@color/whiteTextColor"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/utiedit1"
+        android:id="@+id/foodtitleEditText"
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/glass_morph"
-        app:layout_constraintTop_toBottomOf="@+id/utitext1"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/foodtitleView"
+        tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/utitext2"
+        android:id="@+id/foodoptionsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Options"
-        android:textSize="30sp"
         android:textColor="@color/whiteTextColor"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/utiedit1"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodtitleEditText" />
 
     <Spinner
-        android:id="@+id/utispin1"
+        android:id="@+id/foodoptionsSpinner"
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/utitext2" />
+        app:layout_constraintTop_toBottomOf="@+id/foodoptionsTextView" />
 
     <TextView
-        android:id="@+id/utitext3"
+        android:id="@+id/foodpriceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -68,43 +69,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/utispin1" />
+        app:layout_constraintTop_toBottomOf="@+id/foodoptionsSpinner" />
 
     <EditText
-        android:id="@+id/utiedit2"
+        android:id="@+id/foodpriceEditText"
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/utitext3" />
+        app:layout_constraintTop_toBottomOf="@+id/foodpriceTextView" />
 
     <TextView
-        android:id="@+id/utitext4"
+        android:id="@+id/foodnoteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Note"
-        android:textSize="30sp"
         android:textColor="@color/whiteTextColor"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/utiedit2"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodpriceEditText" />
 
     <EditText
-        android:id="@+id/utiedit3"
+        android:id="@+id/foodnoteEditText"
         android:layout_width="0dp"
         android:layout_height="83dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/utitext4" />
+        app:layout_constraintTop_toBottomOf="@+id/foodnoteTextView" />
 
     <Button
-        android:id="@+id/saveButton1"
+        android:id="@+id/foodsaveButton"
         android:layout_width="140dp"
         android:layout_height="47dp"
         android:layout_marginTop="28dp"
@@ -112,5 +113,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/utiedit3" />
+        app:layout_constraintTop_toBottomOf="@+id/foodnoteEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,19 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/transport"
+    android:background="@drawable/transport2"
     android:padding="16dp">
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="48dp"
         android:text="Title"
         android:textColor="@color/whiteTextColor"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,7 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/round_bordar"
+        android:background="@drawable/glass_morph"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +52,7 @@
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/round_bordar"
+        android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/optionsTextView" />
@@ -75,7 +76,7 @@
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/round_bordar"
+        android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/priceTextView" />
@@ -96,17 +97,17 @@
     <EditText
         android:id="@+id/noteEditText"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="83dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/round_bordar"
+        android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/noteTextView" />
 
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
         android:layout_marginTop="28dp"
         android:text="Save"
         app:layout_constraintEnd_toEndOf="parent"

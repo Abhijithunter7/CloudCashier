@@ -26,4 +26,31 @@
         <item>Flight Payment</item>
         <item>Train Payment</item>
     </string-array>
-</resources>
+
+    <string-array name="bill_options">
+        <item>Electricity</item>
+        <item>Water</item>
+        <item>Sewer</item>
+        <item>Gas or Heating oil</item>
+        <item>Internet</item>
+        <item>Cable</item>
+        <item>Phone bills</item>
+    </string-array>
+
+
+        <string-array name="food_options">
+            <item>Groceries</item>
+            <item>Food products</item>
+            <item>Dairy products and analogues</item>
+            <item>Cereals and cereal products</item>
+            <item>Edible ices, including sorbet</item>
+            <item>Bakery products</item>
+            <item>Meat and meat products</item>
+            <item>Fish and fish products</item>
+            <item>Eggs and egg products</item>
+            <item>Salts, spices, soups, sauces, salads and protein products</item>
+            <item>Products not covered in categories</item>
+        </string-array>
+    </resources>
+
+

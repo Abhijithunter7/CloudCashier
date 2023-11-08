@@ -27,8 +27,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity2 extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity2 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     FirebaseAuth auth;
     FirebaseUser user;
     Button button;
@@ -56,7 +55,7 @@ public class MainActivity2 extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2); // Set the content view first
+        setContentView(R.layout.activity_main2); // Set the content view to your XML layout
 
         auth = FirebaseAuth.getInstance();
         button = findViewById(R.id.logoutButton);
@@ -72,10 +71,8 @@ public class MainActivity2 extends AppCompatActivity
             }
         });
 
-
-
         // Initialize TextViews and CardViews
-        textViewSub1Title = (TextView) findViewById(R.id.textViewSub1Title);
+        textViewSub1Title = findViewById(R.id.textViewSub1Title);
         textViewSub2Title = findViewById(R.id.textViewSub2Title);
         textViewSub3Title = findViewById(R.id.textViewSub3Title);
         textViewSub4Title = findViewById(R.id.textViewSub4Title);
@@ -84,7 +81,7 @@ public class MainActivity2 extends AppCompatActivity
         textViewSub7Title = findViewById(R.id.textViewSub7Title);
         textViewSub8Title = findViewById(R.id.textViewSub8Title);
 
-        img = (ImageView) findViewById(R.id.img1);
+        img = findViewById(R.id.img1);
 
         cardView1 = findViewById(R.id.cardView1);
         cardView2 = findViewById(R.id.cardView2);
@@ -95,8 +92,7 @@ public class MainActivity2 extends AppCompatActivity
         cardView7 = findViewById(R.id.card_view7);
         cardView8 = findViewById(R.id.card_view8);
 
-        // Set OnClickListener for the CardViews
-      img.setOnClickListener(new View.OnClickListener() {
+        cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity2.this, transport_form.class);
@@ -109,9 +105,23 @@ public class MainActivity2 extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity2.this, utilities_form.class);
+                intent.setAction(Intent.ACTION_VIEW);
                 startActivity(intent);
             }
         });
+
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, food.class);
+                intent.setAction(Intent.ACTION_VIEW);
+                startActivity(intent);
+            }
+        });
+
+        // Set OnClickListener for the CardViews
+
+        // (Add OnClickListener for cardView2, cardView3, and so on...)
 
         BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
                 = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -126,10 +136,10 @@ public class MainActivity2 extends AppCompatActivity
                         return true;
                     case R.id.navigationHome:
                         return true;
-                    case  R.id.navigationSearch:
+                    case R.id.navigationSearch:
                         return true;
-                    case  R.id.navigationMenu:
-                        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                    case R.id.navigationMenu:
+                        DrawerLayout drawer = findViewById(R.id.drawer_layout);
                         drawer.openDrawer(GravityCompat.START);
                         return true;
                 }
@@ -139,17 +149,16 @@ public class MainActivity2 extends AppCompatActivity
 
         setDarkMode(getWindow());
 
-        setContentView(R.layout.activity_main2);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         bottomNavigationView = findViewById(R.id.navigation);
@@ -163,7 +172,7 @@ public class MainActivity2 extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -196,7 +205,7 @@ public class MainActivity2 extends AppCompatActivity
             recreate();
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -222,4 +231,17 @@ public class MainActivity2 extends AppCompatActivity
             }
         }
     }
+
+    public void onCardView1Click(View view) {
+        Intent intent = new Intent(MainActivity2.this, transport_form.class);
+        intent.setAction(Intent.ACTION_VIEW);
+        startActivity(intent);
+    }
+
+    public void onCardView2Click(View view) {
+        Intent intent = new Intent(MainActivity2.this, utilities_form.class);
+        startActivity(intent);
+
+    }
 }
+
