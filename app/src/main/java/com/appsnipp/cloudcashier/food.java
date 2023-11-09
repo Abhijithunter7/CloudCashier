@@ -45,7 +45,7 @@ public class food extends AppCompatActivity {
                 // Get the values entered by the user
                 String title = editTitle.getText().toString();
                 String selectedOption = spinOptions.getSelectedItem().toString();
-                String price = editPrice.getText().toString();
+                double price = Double.parseDouble(editPrice.getText().toString());
                 String note = editNote.getText().toString();
 
                 // Do something with the user's input, e.g., save it to a database

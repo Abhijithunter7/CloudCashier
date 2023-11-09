@@ -38,19 +38,39 @@
     </string-array>
 
 
-        <string-array name="food_options">
-            <item>Groceries</item>
-            <item>Food products</item>
-            <item>Dairy products and analogues</item>
-            <item>Cereals and cereal products</item>
-            <item>Edible ices, including sorbet</item>
-            <item>Bakery products</item>
-            <item>Meat and meat products</item>
-            <item>Fish and fish products</item>
-            <item>Eggs and egg products</item>
-            <item>Salts, spices, soups, sauces, salads and protein products</item>
-            <item>Products not covered in categories</item>
-        </string-array>
-    </resources>
+    <string-array name="food_options">
+        <item>Groceries</item>
+        <item>Food products</item>
+        <item>Dairy products and analogues</item>
+        <item>Cereals and cereal products</item>
+        <item>Edible ices, including sorbet</item>
+        <item>Bakery products</item>
+        <item>Meat and meat products</item>
+        <item>Fish and fish products</item>
+        <item>Eggs and egg products</item>
+        <item>Salts, spices, soups, sauces, salads and protein products</item>
+        <item>Products not covered in categories</item>
+    </string-array>
+
+    <string-array name="insurance_options">
+        <item>Motor insurance</item>
+        <item>Health insurance</item>
+        <item>General insurance</item>
+        <item>Umbrella insurance</item>
+        <item>Liability insurance</item>
+        <item>Commercial insurance</item>
+        <item>Life insurance</item>
+        <item>Home insurance</item>
+        <item>Travel insurance</item>
+        <item>Term Life insurance</item>
+        <item>Endowment policy</item>
+        <item>Critical insurance</item>
+        <item>Crop insurance</item>
+        <item>Child insurance</item>
+        <item>Marine insurance</item>
+        <item>Accidental death and dismemberment insurance</item>
+        <item>Business interruption insurance</item>
+    </string-array>
+</resources>
 
 

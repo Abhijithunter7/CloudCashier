@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/food1"
+    android:background="@drawable/insurance1"
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/foodtitleView"
+        android:id="@+id/insurancetitleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/foodtitleEditText"
+        android:id="@+id/insurancetitleEditText"
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
@@ -31,11 +31,11 @@
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodtitleView"
+        app:layout_constraintTop_toBottomOf="@+id/insurancetitleView"
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/foodoptionsTextView"
+        android:id="@+id/insuranceoptionsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -45,20 +45,20 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodtitleEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/insurancetitleEditText" />
 
     <Spinner
-        android:id="@+id/foodoptionsSpinner"
+        android:id="@+id/insuranceoptionsSpinner"
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodoptionsTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/insuranceoptionsTextView" />
 
     <TextView
-        android:id="@+id/foodpriceTextView"
+        android:id="@+id/insurancepriceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -69,10 +69,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodoptionsSpinner" />
+        app:layout_constraintTop_toBottomOf="@+id/insuranceoptionsSpinner" />
 
     <EditText
-        android:id="@+id/foodpriceEditText"
+        android:id="@+id/insurancepriceEditText"
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:inputType="numberDecimal"
@@ -80,10 +80,10 @@
         android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodpriceTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/insurancepriceTextView" />
 
     <TextView
-        android:id="@+id/foodnoteTextView"
+        android:id="@+id/insurancenoteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -93,20 +93,20 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodpriceEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/insurancepriceEditText" />
 
     <EditText
-        android:id="@+id/foodnoteEditText"
+        android:id="@+id/insurancenoteEditText"
         android:layout_width="0dp"
         android:layout_height="83dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodnoteTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/insurancenoteTextView" />
 
     <Button
-        android:id="@+id/foodsaveButton"
+        android:id="@+id/insurancesaveButton"
         android:layout_width="140dp"
         android:layout_height="47dp"
         android:layout_marginTop="28dp"
@@ -114,5 +114,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodnoteEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/insurancenoteEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

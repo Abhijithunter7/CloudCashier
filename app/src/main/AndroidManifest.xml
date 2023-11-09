@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".personal_care"
+            android:exported="false" />
+        <activity
+            android:name=".insurance"
+            android:exported="false" />
+        <activity
             android:name=".food"
             android:exported="false" />
         <activity

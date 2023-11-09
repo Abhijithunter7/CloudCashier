@@ -61,7 +61,7 @@ public class transport_form extends AppCompatActivity {
                 // Get the values from the EditText fields
                 String title = titleEditText.getText().toString();
                 String selectedOption = optionsSpinner.getSelectedItem().toString();
-                String price = priceEditText.getText().toString();
+                double price = Double.parseDouble(priceEditText.getText().toString());
                 String note = noteEditText.getText().toString();
 
                 // You can save or process this data as needed
