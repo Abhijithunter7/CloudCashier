@@ -23,7 +23,7 @@
             <item
                 android:id="@+id/nav_dark_mode"
                 android:icon="@drawable/history1"
-                android:title="change Theme" />
+                android:title="change the Theme" />
         </menu>
     </item>
 
