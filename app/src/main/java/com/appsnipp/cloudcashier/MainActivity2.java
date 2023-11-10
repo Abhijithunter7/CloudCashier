@@ -141,8 +141,6 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
                 switch (item.getItemId()) {
                     case R.id.navigationMyProfile:
                         return true;
-                    case R.id.navigationMyCourses:
-                        return true;
                     case R.id.navigationHome:
                         return true;
                     case R.id.navigationSearch:
@@ -199,11 +197,7 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
-
         } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_dark_mode) {
             // Code for setting dark mode

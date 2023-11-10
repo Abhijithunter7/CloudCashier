@@ -6,31 +6,23 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/changeprofile"
             android:title="Change profile picture" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/history1"
+            android:icon="@drawable/refresh"
             android:title="History" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/home"
             android:title="Tools" />
     </group>
 
-    <item android:title="Only Toggle Theme would work">
+    <item android:title="sanket menu">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
                 android:id="@+id/nav_dark_mode"
-                android:icon="@android:drawable/ic_menu_day"
+                android:icon="@drawable/history1"
                 android:title="Toggle Theme" />
         </menu>
     </item>
