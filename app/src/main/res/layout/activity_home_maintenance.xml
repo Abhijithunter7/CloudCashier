@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/insu"
+    android:background="@drawable/personal"
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/insurancetitleView"
+        android:id="@+id/HomemaintenancetitleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/insurancetitleEditText"
+        android:id="@+id/HomemaintenancetitleEditText"
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
@@ -31,11 +31,11 @@
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insurancetitleView"
+        app:layout_constraintTop_toBottomOf="@+id/HomemaintenancetitleView"
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/insuranceoptionsTextView"
+        android:id="@+id/HomemaintenanceoptionsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -45,20 +45,20 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insurancetitleEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/HomemaintenancetitleEditText" />
 
     <Spinner
-        android:id="@+id/insuranceoptionsSpinner"
+        android:id="@+id/HomemaintenanceoptionsSpinner"
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insuranceoptionsTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/HomemaintenanceoptionsTextView" />
 
     <TextView
-        android:id="@+id/insurancepriceTextView"
+        android:id="@+id/HomemaintenancepriceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -69,10 +69,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insuranceoptionsSpinner" />
+        app:layout_constraintTop_toBottomOf="@+id/HomemaintenanceoptionsSpinner" />
 
     <EditText
-        android:id="@+id/insurancepriceEditText"
+        android:id="@+id/HomemaintenancepriceEditText"
         android:layout_width="0dp"
         android:layout_height="39dp"
         android:inputType="numberDecimal"
@@ -80,10 +80,10 @@
         android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insurancepriceTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/HomemaintenancepriceTextView" />
 
     <TextView
-        android:id="@+id/insurancenoteTextView"
+        android:id="@+id/HomemaintenancenoteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -93,20 +93,20 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insurancepriceEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/HomemaintenancepriceEditText" />
 
     <EditText
-        android:id="@+id/insurancenoteEditText"
+        android:id="@+id/HomemaintenancenoteEditText"
         android:layout_width="0dp"
         android:layout_height="83dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/glass_morph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insurancenoteTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/HomemaintenancenoteTextView" />
 
     <Button
-        android:id="@+id/insurancesaveButton"
+        android:id="@+id/HomemaintenancesaveButton"
         android:layout_width="140dp"
         android:layout_height="47dp"
         android:layout_marginTop="28dp"
@@ -114,5 +114,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insurancenoteEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/HomemaintenancenoteEditText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

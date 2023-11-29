@@ -30,16 +30,15 @@ public class registration extends AppCompatActivity {
     FirebaseAuth mAuth;
     ProgressBar progressBar;
 
+
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
-            Intent intent = new Intent(registration.this, MainActivity2.class);
+            Intent intent = new Intent(registration.this, MainActivity.class);
             startActivity(intent);
             finish();
-
         }
     }
 
@@ -61,10 +60,11 @@ public class registration extends AppCompatActivity {
         alreadyUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(registration.this, MainActivity.class);
                 startActivity(intent);
             }
         });
+
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override

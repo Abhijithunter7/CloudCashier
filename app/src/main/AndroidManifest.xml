@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".home_maintenance"
+            android:exported="false" />
+        <activity
             android:name=".personal_care"
             android:exported="false" />
         <activity
