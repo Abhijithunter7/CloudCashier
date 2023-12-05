@@ -128,6 +128,24 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
             }
         });
 
+        cardView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, personal_care.class);
+                intent.setAction(Intent.ACTION_VIEW);
+                startActivity(intent);
+            }
+        });
+
+        cardView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, home_maintenance.class);
+                intent.setAction(Intent.ACTION_VIEW);
+                startActivity(intent);
+            }
+        });
+
         // Set OnClickListener for the CardViews
 
         // (Add OnClickListener for cardView2, cardView3, and so on...)

@@ -2,6 +2,7 @@ package com.appsnipp.cloudcashier;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,26 +37,35 @@ public class personal_care extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         optionsSpinner.setAdapter(adapter);
 
+        // Handle Spinner item selection
+        optionsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                String selectedOption = parentView.getItemAtPosition(position).toString();
+                // You can do something with the selected option here
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // Do nothing
+            }
+        });
+
         // Set up onClickListener for the save button
+        // Handle save button click
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                saveData();
+                // Get the values from the EditText fields
+                String title = titleEditText.getText().toString();
+                String option = optionsSpinner.getSelectedItem().toString();
+                String price = priceEditText.getText().toString();
+                String note = noteEditText.getText().toString();
+
+                // Perform your logic here, e.g., save the data or show a message
+                String message = "Title: " + title + "\nOption: " + option + "\nPrice: " + price + "\nNote: " + note;
+                Toast.makeText(personal_care.this, message, Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    private void saveData() {
-        // Get values from UI elements
-        String title = titleEditText.getText().toString();
-        String option = optionsSpinner.getSelectedItem().toString();
-        String price = priceEditText.getText().toString();
-        String note = noteEditText.getText().toString();
-
-        // Perform actions with the data (e.g., save to a database)
-
-        // For demonstration purposes, display a toast with the entered data
-        String message = "Title: " + title + "\nOption: " + option + "\nPrice: " + price + "\nNote: " + note;
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

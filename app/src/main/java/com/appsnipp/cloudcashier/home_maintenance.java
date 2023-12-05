@@ -45,6 +45,10 @@ public class home_maintenance extends AppCompatActivity {
         String price = priceEditText.getText().toString();
         String note = noteEditText.getText().toString();
 
+        // Perform your logic here, e.g., save the data or show a message
+        String message = "Title: " + title + "\nOption: " + options + "\nPrice: " + price + "\nNote: " + note;
+        Toast.makeText(home_maintenance.this, message, Toast.LENGTH_SHORT).show();
+
         // Add your logic to save this data to your database or perform any other actions.
         // For example, you might want to create a HomeMaintenance class and save an instance of it.
     }

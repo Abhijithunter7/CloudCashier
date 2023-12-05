@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -64,7 +66,9 @@ public class transport_form extends AppCompatActivity {
                 double price = Double.parseDouble(priceEditText.getText().toString());
                 String note = noteEditText.getText().toString();
 
-                // You can save or process this data as needed
+                // Perform your logic here, e.g., save the data or show a message
+                String message = "Title: " + title + "\nOption: " + selectedOption + "\nPrice: " + price + "\nNote: " + note;
+                Toast.makeText(transport_form.this, message, Toast.LENGTH_SHORT).show();
             }
         });
     }
