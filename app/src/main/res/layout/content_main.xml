@@ -70,7 +70,7 @@
                         android:id="@+id/img1"
                         style="@style/homeCardImage"
                         android:maxHeight="90dp"
-                        android:src="@drawable/home_ic_maths" />
+                        android:src="@drawable/camper" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -106,7 +106,7 @@
                     <ImageView
                         style="@style/homeCardImage"
                         android:maxHeight="90dp"
-                        android:src="@drawable/home_ic_physics" />
+                        android:src="@drawable/bills" />
 
                 </net.colindodd.gradientlayout.GradientRelativeLayout>
             </androidx.cardview.widget.CardView>
