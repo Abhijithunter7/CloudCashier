@@ -141,7 +141,7 @@
                     <ImageView
                         style="@style/homeCardImage"
                         android:maxHeight="90dp"
-                        android:src="@drawable/home_ic_chemistry" />
+                        android:src="@drawable/dinner" />
 
                 </net.colindodd.gradientlayout.GradientRelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -176,7 +176,7 @@
                     <ImageView
                         style="@style/homeCardImage"
                         android:maxHeight="90dp"
-                        android:src="@drawable/home_ic_biology" />
+                        android:src="@drawable/insurance1" />
 
                 </net.colindodd.gradientlayout.GradientRelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -211,7 +211,7 @@
                     <ImageView
                         style="@style/homeCardImage"
                         android:maxHeight="90dp"
-                        android:src="@drawable/home_ic_geography" />
+                        android:src="@drawable/personalcare" />
 
                 </net.colindodd.gradientlayout.GradientRelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -246,7 +246,7 @@
                     <ImageView
                         style="@style/homeCardImage"
                         android:maxHeight="90dp"
-                        android:src="@drawable/home_ic_chemistry" />
+                        android:src="@drawable/house" />
 
                 </net.colindodd.gradientlayout.GradientRelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -281,7 +281,7 @@
                     <ImageView
                         style="@style/homeCardImage"
                         android:maxHeight="90dp"
-                        android:src="@drawable/home_ic_physics" />
+                        android:src="@drawable/entertainment" />
 
                 </net.colindodd.gradientlayout.GradientRelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -316,7 +316,7 @@
                     <ImageView
                         style="@style/homeCardImage"
                         android:maxHeight="90dp"
-                        android:src="@drawable/home_ic_physics" />
+                        android:src="@drawable/education" />
 
                 </net.colindodd.gradientlayout.GradientRelativeLayout>
             </androidx.cardview.widget.CardView>
